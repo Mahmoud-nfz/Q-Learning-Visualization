@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #119da4;
+    --secondary-color: #13505b;
+    --background-color: #D8E2DC;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  
+  .game-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 10px;
+    border: 10px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 500px) {
+    .game-board {
+        grid-gap: 5px;
+    }
+  }
+  
+  .game-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .cell-1 {
+    color: #000000;
+    background-color: #000000;
+  }
+  .cell-2 {
+    color: #FF9A67;
+  }
+  .cell-reward{
+    background-color: #26ae2f;
+  }
+  .cell-death{
+    background-color: #ff0000;
+  }
+  .cell-current {
+    background-color: #8b43cf;
+  }
+    .cell-cold {
+        background-color: #d26056;
+        color: #ffffff;
+    }
+    .cell-warm {
+        background-color: #1cd654;
+        color: #ffffff;
+    }
+    .cell-moderately-cold {
+        background-color: #c56734;
+        color: #ffffff;
+    }
+    .cell-moderately-warm {
+        background-color: #4db078;
+        color: #ffffff;
+    }
+  
+  .game-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .game-button:hover {
+    background-color: #1C7293;
+  }
+  
